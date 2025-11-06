@@ -22,6 +22,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { ModeToggle } from "./ModeToggle";
 
 interface MenuItem {
   title: string;
@@ -224,6 +225,7 @@ const Navbar1 = ({
               </NavigationMenu>
             </div>
           </div>
+          <ModeToggle />
         </nav>
 
         {/* Mobile Menu */}
@@ -263,6 +265,9 @@ const Navbar1 = ({
                   >
                     {menu.map((item) => renderMobileMenuItem(item))}
                   </Accordion>
+                  <div className="mt-4 flex justify-center"> 
+                    <ModeToggle /> 
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
