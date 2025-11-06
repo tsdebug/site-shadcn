@@ -55,61 +55,87 @@ const Navbar1 = ({
       items: [
         {
           title: "News",
-          description: "The latest industry news, updates, and info",
-          icon: <Book className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Events",
-          description: "Our mission is to innovate and empower the world",
-          icon: <Trees className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "NSS Activities",
-          description: "Browse job listing and discover our workspace",
-          icon: <Sunset className="size-5 shrink-0" />,
           url: "#",
         },
       ],
     },
     {
-      title: "Resources",
+      title: "Notice",
+      url: "#",
+    },
+    {
+      title: "Alumni",
       url: "#",
       items: [
         {
-          title: "Help Center",
-          description: "Get all the answers you need right here",
-          icon: <Zap className="size-5 shrink-0" />,
+          title: "Alumni",
           url: "#",
         },
         {
-          title: "Contact Us",
-          description: "We are here to help you with any questions you have",
-          icon: <Sunset className="size-5 shrink-0" />,
+          title: "Alumni Membership Registration",
           url: "#",
         },
         {
-          title: "Status",
-          description: "Check the current status of our services and APIs",
-          icon: <Trees className="size-5 shrink-0" />,
-          url: "#",
-        },
-        {
-          title: "Terms of Service",
-          description: "Our terms and conditions for using our services",
-          icon: <Book className="size-5 shrink-0" />,
+          title: "Alumni Event Registration 2024",
           url: "#",
         },
       ],
     },
     {
-      title: "Pricing",
+      title: "Approval/Accreditation",
       url: "#",
+      items: [
+        {
+          title: "AICTE",
+          url: "#",
+        },
+        {
+          title: "MAKAUT",
+          url: "#",
+        },
+        {
+          title: "NBA",
+          url: "#",
+        },
+        {
+          title: "NAAC",
+          url: "#",
+        },
+        {
+          title: "NIRF",
+          url: "#",
+        },
+      ],
     },
     {
-      title: "Blog",
+      title: "IQAC",
       url: "#",
+      items: [
+        {
+          title: "About IQAC",
+          url: "#",
+        },
+        {
+          title: "Composition",
+          url: "#",
+        },
+        {
+          title: "Meetings",
+          url: "#",
+        },
+        {
+          title: "Reports",
+          url: "#",
+        },
+      ],
     },
   ],
 }: Navbar1Props) => {
@@ -131,7 +157,7 @@ const Navbar1 = ({
               </span>
             </a>
             <div className="flex items-center">
-              <NavigationMenu>
+              <NavigationMenu viewport={false}>
                 <NavigationMenuList>
                   {menu.map((item) => renderMenuItem(item))}
                 </NavigationMenuList>
