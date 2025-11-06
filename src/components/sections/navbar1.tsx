@@ -44,9 +44,9 @@ interface Navbar1Props {
 const Navbar1 = ({
   logo = {
     url: "https://www.bcrec.ac.in",
-    src: "/bcrec-logo.jpeg",
+    src: "/bcrec-logo.png",
     alt: "logo",
-    title: "Dr. B. C. Roy Engineering College",
+    title: "",
   },
   menu = [
     {
@@ -137,13 +137,73 @@ const Navbar1 = ({
         },
       ],
     },
+    {
+      title: "Feedback",
+      url: "#",
+      items: [
+        {
+          title: "Current (2024 Onwards)",
+          url: "#",
+        },
+        {
+          title: "Previous",
+          url: "#",
+        },
+      ],
+    },
+    {
+      title: "Gallery",
+      url: "#",
+      items: [
+        {
+          title: "Image",
+          url: "#",
+        },
+        {
+          title: "Videos",
+          url: "#",
+        },
+      ],
+    },
+    {
+      title: "Disclosure",
+      url: "#",
+    },
+    {
+      title: "Collaboration",
+      url: "#",
+      items: [
+        {
+          title: "Foreign Colab",
+          url: "#",
+        },
+        {
+          title: "Corporate Colab",
+          url: "#",
+        },
+      ],
+    },
+    {
+      title: "Downloads",
+      url: "#",
+      items: [
+        {
+          title: "AICTE Approvals",
+          url: "#",
+        },
+        {
+          title: "Other Downloads",
+          url: "#",
+        },
+      ],
+    },
   ],
 }: Navbar1Props) => {
   return (
     <section className="py-4">
       <div className="container">
         {/* Desktop Menu */}
-        <nav className="hidden items-center justify-between lg:flex">
+        <nav className="hidden items-center justify-between lg:flex px-4">
           <div className="flex items-center gap-6">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
@@ -167,13 +227,13 @@ const Navbar1 = ({
         </nav>
 
         {/* Mobile Menu */}
-        <div className="block lg:hidden">
+        <div className="block lg:hidden px-5">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
               <img
                 src={logo.src}
-                className="h-8 w-8 dark:invert"
+                className="max-h-8 dark:invert"
                 alt={logo.alt}
               />
             </a>
