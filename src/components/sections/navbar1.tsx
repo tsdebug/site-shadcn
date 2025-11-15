@@ -45,9 +45,9 @@ interface Navbar1Props {
 const Navbar1 = ({
   logo = {
     url: "https://www.bcrec.ac.in",
-    src: "/bcrec-logo.png",
-    alt: "logo",
-    title: "",
+    src: "/logo.jpeg",
+    alt: "BCREC logo",
+    title: "Dr. B.C. Roy Engineering College, Durgapur",
   },
   menu = [
     {
@@ -210,10 +210,10 @@ const Navbar1 = ({
             <a href={logo.url} className="flex items-center gap-2">
               <img
                 src={logo.src}
-                className="max-h-8 dark:invert"
+                className="max-h-14 dark:invert"
                 alt={logo.alt}
               />
-              <span className="text-lg font-semibold tracking-tighter">
+              <span className="text-lg font-semibold tracking-tighter mt-2 ml-1">
                 {logo.title}
               </span>
             </a>
@@ -235,7 +235,7 @@ const Navbar1 = ({
             <a href={logo.url} className="flex items-center gap-2">
               <img
                 src={logo.src}
-                className="max-h-8 dark:invert"
+                className="max-h-12 dark:invert"
                 alt={logo.alt}
               />
             </a>
