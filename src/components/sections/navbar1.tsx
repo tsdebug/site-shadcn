@@ -51,9 +51,21 @@ const Navbar1 = ({
   },
   menu = [
     {
-      title: "Activities",
+      title: "Home",
+      url: "#",
+    },
+    {
+      title: "About",
       url: "#",
       items: [
+        {
+          title: "Overview",
+          url: "#",
+        },
+        {
+          title: "Mission & Vision",
+          url: "#",
+        },
         {
           title: "News",
           url: "#",
@@ -63,140 +75,88 @@ const Navbar1 = ({
           url: "#",
         },
         {
-          title: "NSS Activities",
+          title: "Service Rule of BCREC",
           url: "#",
         },
       ],
     },
     {
-      title: "Notice",
-      url: "#",
-    },
-    {
-      title: "Alumni",
+      title: "Departments",
       url: "#",
       items: [
         {
-          title: "Alumni",
+          title: "Basic Science and Humanities",
           url: "#",
         },
         {
-          title: "Alumni Membership Registration",
+          title: "Civil Engineering",
           url: "#",
         },
         {
-          title: "Alumni Event Registration 2024",
+          title: "Computer Science and Design",
+          url: "#",
+        },
+        {
+          title: "Computer Science and Engineering",
+          url: "#",
+        },
+        {
+          title: "Computer Science and Engineering (Artifcial Intelligence & Machine Learning)",
+          url: "#",
+        },
+        {
+          title: "Computer Science and Engineering (Data Science)",
+          url: "#",
+        },
+        {
+          title: "Computer Science and Engineering (Cyber Security)",
+          url: "#",
+        },
+        {
+          title: "Information Technology",
           url: "#",
         },
       ],
     },
     {
-      title: "Approval/Accreditation",
+      title: "Academics",
       url: "#",
       items: [
         {
-          title: "AICTE",
+          title: "Programmes",
           url: "#",
         },
         {
-          title: "MAKAUT",
+          title: "Under Graduate",
           url: "#",
         },
         {
-          title: "NBA",
-          url: "#",
-        },
-        {
-          title: "NAAC",
-          url: "#",
-        },
-        {
-          title: "NIRF",
+          title: "Old Syllabus",
           url: "#",
         },
       ],
     },
     {
-      title: "IQAC",
+      title: "Placement",
       url: "#",
       items: [
         {
-          title: "About IQAC",
+          title: "General Info",
           url: "#",
         },
         {
-          title: "Composition",
+          title: "Placement Details",
           url: "#",
         },
         {
-          title: "Meetings",
+          title: "Training Details",
           url: "#",
         },
-        {
-          title: "Reports",
-          url: "#",
-        },
-      ],
+      ]
     },
     {
-      title: "Feedback",
+      title: "Contacts",
       url: "#",
-      items: [
-        {
-          title: "Current (2024 Onwards)",
-          url: "#",
-        },
-        {
-          title: "Previous",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Gallery",
-      url: "#",
-      items: [
-        {
-          title: "Image",
-          url: "#",
-        },
-        {
-          title: "Videos",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Disclosure",
-      url: "#",
-    },
-    {
-      title: "Collaboration",
-      url: "#",
-      items: [
-        {
-          title: "Foreign Colab",
-          url: "#",
-        },
-        {
-          title: "Corporate Colab",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Downloads",
-      url: "#",
-      items: [
-        {
-          title: "AICTE Approvals",
-          url: "#",
-        },
-        {
-          title: "Other Downloads",
-          url: "#",
-        },
-      ],
     },
   ],
 }: Navbar1Props) => {
@@ -217,7 +177,7 @@ const Navbar1 = ({
                 {logo.title}
               </span>
             </a>
-            <div className="flex items-center">
+            <div className="flex items-center mt-2 ml-10 mr-2">
               <NavigationMenu viewport={false}>
                 <NavigationMenuList>
                   {menu.map((item) => renderMenuItem(item))}
@@ -265,8 +225,8 @@ const Navbar1 = ({
                   >
                     {menu.map((item) => renderMobileMenuItem(item))}
                   </Accordion>
-                  <div className="mt-4 flex justify-center"> 
-                    <ModeToggle /> 
+                  <div className="mt-4 flex justify-center">
+                    <ModeToggle />
                   </div>
                 </div>
               </SheetContent>
