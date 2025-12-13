@@ -12,7 +12,7 @@ export default function Welcome() {
     <div className="container mx-auto p-6 grid md:grid-cols-2 gap-8 mt-6">
       
       {/*Left side*/}
-      <div className="ml-4"> 
+      <div className="md:ml-4"> 
         <h1 className="text-3xl font-bold ">
           Welcome to <span className="text-yellow-500">BCREC</span>
         </h1> 
@@ -52,7 +52,7 @@ export default function Welcome() {
               I welcome you all to join with me towards the journey of excellence in technical education. Dr. B.C. Roy Engineering 
               college is a well known name looked upon by any aspirant in the Engineering and Technological Education.
             </p>
-            <div>
+            <div className="mt-4">
               <Button className="bg-red-700 hover:bg-red-900 mx-4 mb-2">
                 Read More
               </Button>
