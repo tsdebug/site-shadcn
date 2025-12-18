@@ -3,7 +3,7 @@
 import { HoverEffect } from "../ui/card-hover-effect";
 import { Building2, Laptop, Users, FileText } from "lucide-react";
  
-export function CardHoverEffectDemo() {
+export function CardHoverEffect() {
   return (
     <div className="max-w-full mx-auto px-8 bg-blue-100/30 dark:bg-slate-900/40">
       <HoverEffect items={projects} />
